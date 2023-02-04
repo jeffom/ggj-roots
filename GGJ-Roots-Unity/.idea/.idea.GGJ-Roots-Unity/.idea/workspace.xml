@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a896a14a-1f52-459d-8f9c-fc6bf799df92" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ-Roots-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ-Roots-Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mouth Piece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mouth Piece.prefab" afterDir="false" />
-    </list>
+    <list default="true" id="a896a14a-1f52-459d-8f9c-fc6bf799df92" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +74,7 @@
       <updated>1675467477045</updated>
       <workItem from="1675467480075" duration="17695000" />
       <workItem from="1675548772328" duration="110000" />
+      <workItem from="1675550481179" duration="611000" />
     </task>
     <servers />
   </component>

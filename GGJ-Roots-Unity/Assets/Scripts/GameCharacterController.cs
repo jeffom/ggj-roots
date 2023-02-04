@@ -95,8 +95,8 @@ public class GameCharacterController : MonoBehaviour
                 if (m_equippedTool == tooth.FixTool)
                 {
                     tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
-                    tooth.PlayFixingSound();
-                    SetEquipedTool(ToolType.None);
+                    tooth.PlayFixingSound(); 
+                   //   SetEquipedTool(ToolType.None);
                     ProceduralPieceSpawner.scoreValue += 100;
                 }
             }
