@@ -19,7 +19,7 @@ public class GumsMovement : MonoBehaviour
 		if (distance > stoppingDistance)
 		{
 			gumsUpper.transform.position += direction * (MovementSpeed * Time.deltaTime);
-			gumsBottom.transform.position -= direction * (MovementSpeed * Time.deltaTime);
+		//	gumsBottom.transform.position -= direction * (MovementSpeed * Time.deltaTime);
 		}
 	}
 

@@ -2,76 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a896a14a-1f52-459d-8f9c-fc6bf799df92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/AddingPoints_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/AddingPoints_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_5.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_6.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FixingTooth/FixingTooth_7.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Scream/Scream_5.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/StartingGame_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/StartingGame_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/FireExtinguisher_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/FireExtinguisher_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/FireExtinguisher_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/FireExtinguisher_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Glue_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Glue_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Glue_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Glue_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Glue_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Glue_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Hook_1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Hook_1.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Hook_2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Hook_2.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Wrench_1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Wrench_1.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Wrench_2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Wrench_2.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Wrench_3.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Tools/Wrench_3.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ-Roots-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ-Roots-Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AudioMixer/AudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AudioMixer/AudioMixer.mixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/ToolConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/ToolConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DeseasedTeethCollider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DeseasedTeethCollider.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mouth Piece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mouth Piece.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Robin Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Robin Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Robin Test.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Robin Test.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundScripts/SoundPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundScripts/SoundPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tooth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tooth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ToothDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToothDetector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ToothDetector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToothDetector.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,22 +11,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48ff9509a05740228ce2796861cdc1d51a000/d6/fbfd7b9b/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b15294f286684bc99ec197157507c917159a00/4d/69b032de/Material.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b15294f286684bc99ec197157507c917159a00/87/ba6dbbb4/Random.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b15294f286684bc99ec197157507c917159a00/d0/15fc17ba/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToothDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@2.0.0/Editor/PlasticSCM/Views/PendingChanges/Dialogs/FilterRulesConfirmationDialog.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.10/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Framework/Events/Input/InputSystem/OnInputSystemEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Framework/Events/Lifecycle/FixedUpdate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cabf193938ee46108303d4f8c1351d173a00/a2/02454c9d/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LFWnLABqFC7V5KL83Rf5q7yjTs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -147,14 +76,27 @@
       <option name="presentableId" value="Default" />
       <updated>1675467477045</updated>
       <workItem from="1675467480075" duration="17695000" />
+      <workItem from="1675548772328" duration="110000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
