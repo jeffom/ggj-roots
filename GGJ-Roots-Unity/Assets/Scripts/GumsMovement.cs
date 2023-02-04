@@ -5,8 +5,9 @@ public class GumsMovement : MonoBehaviour
 {
 	[FormerlySerializedAs("object1")] public GameObject gumsUpper;
 	[FormerlySerializedAs("object2")] public GameObject gumsBottom;
-	private const float MovementSpeed = 0.05f;
-	private const float StoppingDistance = 5f;
+	private const float MovementSpeed = 2f;
+	private static float stoppingDistance = 20f;
+	private const float Step = 0.5f;
 
 	private void Update()
 	{
@@ -15,10 +16,15 @@ public class GumsMovement : MonoBehaviour
 		Vector3 direction = (position1 - position).normalized;
 		float distance = Vector3.Distance(position, position1);
 
-		if (distance > StoppingDistance)
+		if (distance > stoppingDistance)
 		{
 			gumsUpper.transform.position += direction * (MovementSpeed * Time.deltaTime);
 			gumsBottom.transform.position -= direction * (MovementSpeed * Time.deltaTime);
 		}
+	}
+
+	public static void FailedStep()
+	{
+		stoppingDistance -= Step;
 	}
 }
