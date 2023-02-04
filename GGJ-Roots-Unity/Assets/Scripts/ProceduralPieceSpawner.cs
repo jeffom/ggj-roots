@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Serialization;
 
 public class ProceduralPieceSpawner : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class ProceduralPieceSpawner : MonoBehaviour
     [SerializeField] private GameObject m_container;
     [SerializeField] private Camera m_gameCamera;
     [SerializeField] private ToolConfig m_toolConfig;
-    [SerializeField] private Text score;
+    [FormerlySerializedAs("score")] [SerializeField] public TextMeshProUGUI scoreText;
+
+    public static int scoreValue = 0;
     
     //How many units for 1 second
     [SerializeField] private float m_piecesSpeed;
@@ -27,8 +30,13 @@ public class ProceduralPieceSpawner : MonoBehaviour
         {
             var instance = SpawnSection(m_initialPieceLength * i);
             m_spawnedObjects.Add(instance);
-            score.text = "0";
+            scoreText.text = "Your score is: " + scoreValue;
         }
+    }
+
+    private void Update()
+    {
+	    scoreText.text = "Your score is: " + scoreValue;
     }
 
     void LateUpdate()
@@ -62,7 +70,7 @@ public class ProceduralPieceSpawner : MonoBehaviour
             Destroy(firstPiece);
         }
     }
-
+    
     GameObject SpawnSection(float startPosX)
     {
         var instance = GameObject.Instantiate(m_mouthObject);

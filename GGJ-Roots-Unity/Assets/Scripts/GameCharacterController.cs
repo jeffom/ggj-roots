@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameCharacterController : MonoBehaviour
 {
     //Singleton ugly but fast
-    static public GameCharacterController Instance
+    public static GameCharacterController Instance
     {
         get => m_instance;
         set => m_instance = value;
@@ -16,7 +17,10 @@ public class GameCharacterController : MonoBehaviour
     [SerializeField] private ToolConfig m_toolConfig;
     [SerializeField] GameObject m_toolRoot;
     ToolType m_equippedTool = ToolType.None;
-    public ToolType EquippedTool
+
+    private ProceduralPieceSpawner _proceduralPieceSpawner;
+
+    private ToolType EquippedTool
     {
         get => m_equippedTool;
     }
@@ -82,7 +86,7 @@ public class GameCharacterController : MonoBehaviour
         if (EquippedTool == ToolType.None)
             return;
 
-        if (collision.gameObject.tag == "Tooth")
+        if (collision.gameObject.CompareTag("Tooth"))
         {
             var tooth = collision.gameObject.GetComponent<Tooth>();
             if (tooth)
@@ -91,6 +95,8 @@ public class GameCharacterController : MonoBehaviour
                 {
                     tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
                     SetEquipedTool(ToolType.None);
+                    ProceduralPieceSpawner.scoreValue += 100;
+                    Debug.Log("The player's score has increase by 100 points");
                 }
             }
         }
