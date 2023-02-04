@@ -6,7 +6,7 @@ public class GumsMovement : MonoBehaviour
 	[FormerlySerializedAs("object1")] public GameObject gumsUpper;
 	[FormerlySerializedAs("object2")] public GameObject gumsBottom;
 	private const float MovementSpeed = 2f;
-	private static float stoppingDistance = 20f;
+	private static float stoppingDistance = 10f;
 	private const float Step = 0.5f;
 
 	private void Update()
