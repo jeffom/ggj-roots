@@ -6,6 +6,8 @@ public class Tooth : MonoBehaviour
 {
     //The tool that should be used to fix this teeth
     [SerializeField] public ToolType FixTool;
+    //The tool that should not be used to fix the tooth
+    [SerializeField] private ToolType WrongTool; 
     [SerializeField] public MeshRenderer m_toothRenderer;
 
     public void SetMaterial(Material mat)

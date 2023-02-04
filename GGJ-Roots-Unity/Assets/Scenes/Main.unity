@@ -399,6 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FixTool: 0
+  WrongTool: 0
   m_toothRenderer: {fileID: 0}
 --- !u!212 &1196878344
 SpriteRenderer:
@@ -893,7 +894,7 @@ MonoBehaviour:
   m_container: {fileID: 1386768178}
   m_gameCamera: {fileID: 519420031}
   m_toolConfig: {fileID: 11400000, guid: 91f0db683fa404597bd455fa1f761a81, type: 2}
-  score: {fileID: 1996466211}
+  scoreText: {fileID: 1996466211}
   m_piecesSpeed: -0.5
 --- !u!1 &1996466209
 GameObject:
@@ -1016,7 +1017,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -80.15106, w: 0}
+  m_margin: {x: 0, y: 0, z: -145.03522, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
