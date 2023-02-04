@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488d05c00853d43408c13a8628d6980f, type: 3}
+  m_Name: ToolConfig
+  m_EditorClassIdentifier: 
+  m_toolMap:
+  - Type: 0
+    Prefab: {fileID: 7932501957898597582, guid: dd239a809dea14a81a3e7872c1f71713, type: 3}
+    ToothMaterial: {fileID: 2100000, guid: eb482c64a88f2408ea3637ed07d3a23e, type: 2}
+  - Type: 1
+    Prefab: {fileID: 7272359029752841048, guid: 60485e1ce537445b7b870611981b8f02, type: 3}
+    ToothMaterial: {fileID: 2100000, guid: aed2625f7496f40b095f0b5c0c981ef7, type: 2}
+  - Type: 2
+    Prefab: {fileID: 3228227299517594791, guid: 6d338a1b4705c434db0af0309ac18e7a, type: 3}
+    ToothMaterial: {fileID: 2100000, guid: 79b0e216f216b4a089725d4c18f92f49, type: 2}
+  - Type: 3
+    Prefab: {fileID: 3305115630339709441, guid: 0277a46483a08476a92c054d8b1f8803, type: 3}
+    ToothMaterial: {fileID: 2100000, guid: 7d443ae01c19c41feb0b1d3d6b7bae2b, type: 2}
+  - Type: 4
+    Prefab: {fileID: 0}
+    ToothMaterial: {fileID: 2100000, guid: fb3a45d5ef1484771b747fecc04e6aab, type: 2}

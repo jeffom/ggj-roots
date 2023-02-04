@@ -4,20 +4,13 @@ using UnityEngine;
 
 public class Tooth : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //The tool that should be used to fix this teeth
+    [SerializeField] public ToolType FixTool;
+    [SerializeField] public MeshRenderer m_toothRenderer;
 
-    // Update is called once per frame
-    void Update()
+    public void SetMaterial(Material mat)
     {
-        
-    }
-
-    void OnMouseDown()
-    {
-        
+        //I know it duplicates it but in this case it should be fine
+        m_toothRenderer.material = mat;
     }
 }
