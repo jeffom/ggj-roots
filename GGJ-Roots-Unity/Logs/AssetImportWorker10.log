@@ -174,3 +174,90 @@ Received Import Request.
   path: Assets/DR_Root_Idle.fbx
   artifactKey: Guid(4e6863c1588974057be1851594cd7a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/DR_Root_Idle.fbx using Guid(4e6863c1588974057be1851594cd7a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7523721ac449fbc66481e2eac70ec5fc') in 0.272113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.581850 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Accessory_01.fbx
+  artifactKey: Guid(dc94cc429b47dd84e8a527376d6e05d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Accessory_01.fbx using Guid(dc94cc429b47dd84e8a527376d6e05d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c53852be66b4433522a9a2246310d100') in 0.070559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/EyeLight_00_R.fbx
+  artifactKey: Guid(d0d3992b3ab5d664f86ebedbc2f7f32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/EyeLight_00_R.fbx using Guid(d0d3992b3ab5d664f86ebedbc2f7f32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819a18ef0aeb63977e3d0e9ef3d33b06') in 0.020103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/EyeLight_02_R.fbx
+  artifactKey: Guid(9c92d641718bd7944bc1c13062d8a562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/EyeLight_02_R.fbx using Guid(9c92d641718bd7944bc1c13062d8a562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ae6b417e5bdc6157855be0eaab00fd') in 0.009824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Face_01.fbx
+  artifactKey: Guid(19b3520048fec7345982be6761526df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Face_01.fbx using Guid(19b3520048fec7345982be6761526df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae8ba804ad9a8df9dd72f9b61ece48b') in 0.038984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Hair_00_Base.fbx
+  artifactKey: Guid(2e82b72d6ee6004469434238fcc4887a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Hair_00_Base.fbx using Guid(2e82b72d6ee6004469434238fcc4887a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f8547f6adcd85b89b54242371b2d0f') in 0.017008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Hair_00_Front.fbx
+  artifactKey: Guid(ba08044b46b9d274191503b96449b16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Hair_00_Front.fbx using Guid(ba08044b46b9d274191503b96449b16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b295e2dbb9664f5779ad744ab95fc4bc') in 0.021571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Accessory_02.fbx
+  artifactKey: Guid(61aec2bbd941a4c45831b3509a290539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Accessory_02.fbx using Guid(61aec2bbd941a4c45831b3509a290539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd5b899f7f3e4d7c2aab52b4a365edd') in 0.013921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/EyeLight_00_L.fbx
+  artifactKey: Guid(6131178e2a1e42242b6d58f6ba6aa6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/EyeLight_00_L.fbx using Guid(6131178e2a1e42242b6d58f6ba6aa6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb2c792189ae73297e9d4569239823b') in 0.009757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Eye_02_R.fbx
+  artifactKey: Guid(bd27e7964625c84449f2ac3e445385f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Eye_02_R.fbx using Guid(bd27e7964625c84449f2ac3e445385f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3da86c3c2ff4080fb827c004d5d4ae') in 0.016831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Eye_01_R.fbx
+  artifactKey: Guid(3c36a19694fa33d4f8972df9cab583c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Eye_01_R.fbx using Guid(3c36a19694fa33d4f8972df9cab583c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7593546f52cb97e1afde36a344a23a') in 0.016911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Hair_01_Base.fbx
+  artifactKey: Guid(0001e8f856c67ce4cbd40fee65534082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Hair_01_Base.fbx using Guid(0001e8f856c67ce4cbd40fee65534082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55ee8d1b92974d7f90f0646ffe4cc88') in 0.014718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Costume_02.fbx
+  artifactKey: Guid(dd4802cc7972ecb4699ed0b29916793f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Costume_02.fbx using Guid(dd4802cc7972ecb4699ed0b29916793f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbfbd86f88b47656598340841088776e') in 0.023645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Hair_02_Front.fbx
+  artifactKey: Guid(cade0cf166c5da34681e0c24647b45a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Hair_02_Front.fbx using Guid(cade0cf166c5da34681e0c24647b45a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3126488300a5fdf6e524561636d841ec') in 0.013304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/SD Unity-Chan Haon Custom/Models/Parts/Eye_01_L.fbx
+  artifactKey: Guid(2f676b8f712ef0f40825ad6df2132f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SD Unity-Chan Haon Custom/Models/Parts/Eye_01_L.fbx using Guid(2f676b8f712ef0f40825ad6df2132f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9deeda5ac7b447ecab4544309971061e') in 0.014680 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
