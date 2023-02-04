@@ -129,5 +129,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FixTool: 0
   m_toothRenderer: {fileID: 1364246520287291206}
+  pointsGrantedSound:
+  - {fileID: 8300000, guid: 56c13a288db0e4c4392d46f750bbc774, type: 3}
+  fixingSounds:
+  - {fileID: 8300000, guid: e30c8a27f52f14ac78d1008145313897, type: 3}
+  - {fileID: 8300000, guid: cee62f37454044be5aebeadb8964b235, type: 3}
+  - {fileID: 8300000, guid: 60041e3f0e68c4e2cb1f8d6ff8f9642e, type: 3}
+  - {fileID: 8300000, guid: d7148d2f5317b4a368855d7b9abed0ca, type: 3}
+  - {fileID: 8300000, guid: b5f37df8634654376a378e7d68ebfe28, type: 3}
+  - {fileID: 8300000, guid: 82c1707dd811b41a086dbdef0c1c5070, type: 3}
+  - {fileID: 8300000, guid: 1c87af01671894ad8bf588ba612cb565, type: 3}
   healedTooth: {fileID: 2100000, guid: fb3a45d5ef1484771b747fecc04e6aab, type: 2}
-  outOfBoundsCollider: {fileID: 0}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3389329693875938988}
   - component: {fileID: 3389329693875938991}
   - component: {fileID: 3389329693875938990}
+  - component: {fileID: 701381632915066329}
   m_Layer: 0
   m_Name: DeseasedTeethCollider
   m_TagString: Untagged
@@ -62,3 +63,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &701381632915066329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3389329693875938985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7b4107fbbe44ec08838b41157bb3b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screams:
+  - {fileID: 8300000, guid: 037165a95541a493086762e970d62c12, type: 3}
+  - {fileID: 8300000, guid: cf34efd3025da48a79cd69366ffcf04b, type: 3}
+  - {fileID: 8300000, guid: d87c3a47d55e84412a5677f3a1946da8, type: 3}
+  - {fileID: 8300000, guid: 042636a5c976245d0aea71a1e1c5f478, type: 3}
+  - {fileID: 8300000, guid: f00dc715e3a174dc088d8fa3fd4e298e, type: 3}

@@ -78,6 +78,7 @@ public class GameCharacterController : MonoBehaviour
             newToolObject.transform.localScale = Vector3.one * 0.25f;
             newToolObject.transform.localPosition = Vector3.zero;
             newToolObject.transform.localRotation = Quaternion.identity;
+            m_toolConfig.PlayRandomToolSound(toolType, newToolObject);
         }
     }
 
@@ -94,9 +95,9 @@ public class GameCharacterController : MonoBehaviour
                 if (m_equippedTool == tooth.FixTool)
                 {
                     tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
+                    tooth.PlayFixingSound();
                     SetEquipedTool(ToolType.None);
                     ProceduralPieceSpawner.scoreValue += 100;
-                    Debug.Log("The player's score has increase by 100 points");
                 }
             }
         }

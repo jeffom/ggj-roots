@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
-using Unity.VisualScripting;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
 public class SoundPlayer : MonoBehaviour
 {
-    [NonSerialized] public SoundPlayer Instance;
+    [NonSerialized] public static SoundPlayer Instance;
 
     [SerializeField] private AudioClip bgmForScene;
     [SerializeField] private AudioMixer audioMixer;
@@ -16,7 +16,11 @@ public class SoundPlayer : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null) return;
+        if (Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
 
         Instance = this;
     }
@@ -41,13 +45,20 @@ public class SoundPlayer : MonoBehaviour
         bool loop = false,
         float spatialBlend = 0,
         float volume = 1
-    ) {
+    )
+    {
         if (clip == null) return null;
-        return PlayOnGO(clip, BGM, Camera.main.gameObject, loop, spatialBlend, volume);
+        return PlayOnGO(clip, Camera.main.gameObject, BGM, loop, spatialBlend, volume);
     }
 
-    public AudioSource PlayOnGO(AudioClip clip, string audioMixerGroup, GameObject GO, bool loop = false,
-        float spatialBlend = 0, float volume = 1)
+    public AudioSource PlayOnGO(
+        AudioClip clip,
+        GameObject GO,
+        string audioMixerGroup,
+        bool loop = false,
+        float spatialBlend = 0,
+        float volume = 1
+    )
     {
         if (clip == null || GO == null) return null;
 
@@ -66,6 +77,22 @@ public class SoundPlayer : MonoBehaviour
         }
 
         return source;
+    }
+
+    public AudioSource PlayRandomSoundOnGO(
+        List<AudioClip> clips,
+        GameObject GO,
+        string audioMixerGroup,
+        bool loop = false,
+        float spatialBlend = 0,
+        float volume = 1
+    ) {
+        if (clips.Count == 0) return null;
+
+        int soundToPlay = UnityEngine.Random.Range(0, clips.Count);
+        AudioClip toolSoundToPlay = clips[soundToPlay];
+
+        return PlayOnGO(toolSoundToPlay, GO, audioMixerGroup, loop, spatialBlend, volume);
     }
 
     IEnumerator DestroySource(float time, AudioSource source)

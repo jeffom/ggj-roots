@@ -21,6 +21,7 @@ public class ToolConfig : ScriptableObject
         [SerializeField] public ToolType Type;
         [SerializeField] public GameObject Prefab;
         [SerializeField] public Material ToothMaterial;
+        [SerializeField] public List<AudioClip> ToolSounds;
     }
 
     [SerializeField]
@@ -36,5 +37,13 @@ public class ToolConfig : ScriptableObject
     {
         var toolPrefab = m_toolMap.FirstOrDefault(x => x.Type == type);
         return toolPrefab != null ? toolPrefab.ToothMaterial : null;
+    }
+
+    public void PlayRandomToolSound(ToolType type, GameObject GO)
+    {
+        var toolPrefab = m_toolMap.FirstOrDefault(x => x.Type == type);
+        List<AudioClip> toolSounds = toolPrefab != null ? toolPrefab.ToolSounds : null;
+
+        SoundPlayer.Instance.PlayRandomSoundOnGO(toolSounds, GO, SoundPlayer.SFX);
     }
 }

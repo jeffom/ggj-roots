@@ -16,15 +16,30 @@ MonoBehaviour:
   - Type: 0
     Prefab: {fileID: 7932501957898597582, guid: dd239a809dea14a81a3e7872c1f71713, type: 3}
     ToothMaterial: {fileID: 2100000, guid: eb482c64a88f2408ea3637ed07d3a23e, type: 2}
+    ToolSounds:
+    - {fileID: 8300000, guid: 110d96445459046c0bfa2312456e1019, type: 3}
+    - {fileID: 8300000, guid: dadcc5ed60f17474db7350df1e4a59fd, type: 3}
   - Type: 1
     Prefab: {fileID: 7272359029752841048, guid: 60485e1ce537445b7b870611981b8f02, type: 3}
     ToothMaterial: {fileID: 2100000, guid: aed2625f7496f40b095f0b5c0c981ef7, type: 2}
+    ToolSounds:
+    - {fileID: 8300000, guid: e87b65f283dec4a659053546bf635ed3, type: 3}
+    - {fileID: 8300000, guid: 3b77f4b5d52bb4ada8e53682622cbfa1, type: 3}
+    - {fileID: 8300000, guid: d428c34effd32491faf217989ee5f8c5, type: 3}
   - Type: 2
     Prefab: {fileID: 3228227299517594791, guid: 6d338a1b4705c434db0af0309ac18e7a, type: 3}
     ToothMaterial: {fileID: 2100000, guid: 79b0e216f216b4a089725d4c18f92f49, type: 2}
+    ToolSounds:
+    - {fileID: 8300000, guid: 70b13d73167784c6382cbb7fa505da9c, type: 3}
+    - {fileID: 8300000, guid: 99208c8d707574538b6ba6fab608fd39, type: 3}
   - Type: 3
     Prefab: {fileID: 3305115630339709441, guid: 0277a46483a08476a92c054d8b1f8803, type: 3}
     ToothMaterial: {fileID: 2100000, guid: 7d443ae01c19c41feb0b1d3d6b7bae2b, type: 2}
+    ToolSounds:
+    - {fileID: 8300000, guid: bb5e6d23b8e30478a9d0df5e92ee6149, type: 3}
+    - {fileID: 8300000, guid: c889f1942c5ec4bb08e94acaf752310a, type: 3}
+    - {fileID: 8300000, guid: 0c78c4f535bbc4bb6b9764541cab87bd, type: 3}
   - Type: 4
     Prefab: {fileID: 0}
     ToothMaterial: {fileID: 2100000, guid: fb3a45d5ef1484771b747fecc04e6aab, type: 2}
+    ToolSounds: []

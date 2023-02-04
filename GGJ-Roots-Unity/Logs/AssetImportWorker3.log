@@ -978,3 +978,90 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1304.999007 seconds.
+  path: Assets/Sounds/FireExtinguisher_1.wav
+  artifactKey: Guid(110d96445459046c0bfa2312456e1019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/FireExtinguisher_1.wav using Guid(110d96445459046c0bfa2312456e1019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0167b06329757e9c0514f2c22d4516dd') in 0.027403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Sounds/FixingTooth_5.wav
+  artifactKey: Guid(b5f37df8634654376a378e7d68ebfe28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/FixingTooth_5.wav using Guid(b5f37df8634654376a378e7d68ebfe28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd087612142bf2d5c690b2b60bef65f7b') in 0.004816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sounds/Glue_3.wav
+  artifactKey: Guid(d428c34effd32491faf217989ee5f8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Glue_3.wav using Guid(d428c34effd32491faf217989ee5f8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998e41ff31c769ec285b1d1d73898200') in 0.004574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sounds/FixingTooth_2.wav
+  artifactKey: Guid(cee62f37454044be5aebeadb8964b235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/FixingTooth_2.wav using Guid(cee62f37454044be5aebeadb8964b235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d06f7853b177964901da626873255c') in 0.003790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sounds/Scream_2.wav
+  artifactKey: Guid(cf34efd3025da48a79cd69366ffcf04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Scream_2.wav using Guid(cf34efd3025da48a79cd69366ffcf04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404477ec02e9d0cae44bec695886ac78') in 0.004495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sounds/FixingTooth_1.wav
+  artifactKey: Guid(e30c8a27f52f14ac78d1008145313897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/FixingTooth_1.wav using Guid(e30c8a27f52f14ac78d1008145313897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9afb243f874382f0e45e1d9db243f6d') in 0.004164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sounds/Scream_4.wav
+  artifactKey: Guid(042636a5c976245d0aea71a1e1c5f478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Scream_4.wav using Guid(042636a5c976245d0aea71a1e1c5f478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5bb72fe4d0b314855cdff966283d9fd') in 0.004027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sounds/FixingTooth_4.wav
+  artifactKey: Guid(d7148d2f5317b4a368855d7b9abed0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/FixingTooth_4.wav using Guid(d7148d2f5317b4a368855d7b9abed0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8b8633b9ee3968b4a030f5b259d0f0') in 0.003873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sounds/Hook_1.mp3
+  artifactKey: Guid(70b13d73167784c6382cbb7fa505da9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Hook_1.mp3 using Guid(70b13d73167784c6382cbb7fa505da9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee673b347347b95300e1f095cc2916e4') in 0.643142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sounds/Scream_1.wav
+  artifactKey: Guid(037165a95541a493086762e970d62c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Scream_1.wav using Guid(037165a95541a493086762e970d62c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959482b1c1efe444e66cd62fa2d5a455') in 0.003875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sounds/FireExtinguisher_2.wav
+  artifactKey: Guid(dadcc5ed60f17474db7350df1e4a59fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/FireExtinguisher_2.wav using Guid(dadcc5ed60f17474db7350df1e4a59fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60fc16d60d402e055ed7ef920d558a0c') in 0.003739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sounds/Scream_3.wav
+  artifactKey: Guid(d87c3a47d55e84412a5677f3a1946da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Scream_3.wav using Guid(d87c3a47d55e84412a5677f3a1946da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671c32b73251637b9d211c2365852163') in 0.004287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.752306 seconds.
+  path: Assets/Sounds/Wrench_1.mp3
+  artifactKey: Guid(bb5e6d23b8e30478a9d0df5e92ee6149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Wrench_1.mp3 using Guid(bb5e6d23b8e30478a9d0df5e92ee6149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b417910dfa6071933041a362ff9d8ba6') in 0.008110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Sounds/Wrench_3.mp3
+  artifactKey: Guid(0c78c4f535bbc4bb6b9764541cab87bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Wrench_3.mp3 using Guid(0c78c4f535bbc4bb6b9764541cab87bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91da8090361697ee819070898dd93b4') in 0.005178 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

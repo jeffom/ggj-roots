@@ -9,6 +9,8 @@ public class Tooth : MonoBehaviour
     //The tool that should be used to fix this teeth
     [SerializeField] public ToolType FixTool;
     [SerializeField] public MeshRenderer m_toothRenderer;
+    [SerializeField] private List<AudioClip> pointsGrantedSound;
+    [SerializeField] private List<AudioClip> fixingSounds;
 
     [SerializeField] public Material healedTooth;
 
@@ -21,5 +23,11 @@ public class Tooth : MonoBehaviour
     {
         //I know it duplicates it but in this case it should be fine
         m_toothRenderer.material = mat;
+    }
+
+    public void PlayFixingSound()
+    {
+        SoundPlayer.Instance.PlayRandomSoundOnGO(pointsGrantedSound, Camera.main.gameObject, SoundPlayer.SFX);
+        SoundPlayer.Instance.PlayRandomSoundOnGO(fixingSounds, gameObject, SoundPlayer.SFX);
     }
 }
