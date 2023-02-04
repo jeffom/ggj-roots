@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProceduralPieceSpawner : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class ProceduralPieceSpawner : MonoBehaviour
     [SerializeField] private GameObject m_container;
     [SerializeField] private Camera m_gameCamera;
     [SerializeField] private ToolConfig m_toolConfig;
+    [SerializeField] private Text score;
+    
     //How many units for 1 second
     [SerializeField] private float m_piecesSpeed;
 
@@ -24,6 +27,7 @@ public class ProceduralPieceSpawner : MonoBehaviour
         {
             var instance = SpawnSection(m_initialPieceLength * i);
             m_spawnedObjects.Add(instance);
+            score.text = "0";
         }
     }
 
