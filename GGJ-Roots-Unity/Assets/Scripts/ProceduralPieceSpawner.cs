@@ -97,8 +97,9 @@ public class ProceduralPieceSpawner : MonoBehaviour
             ToolType toolType = (ToolType)enums.GetValue(random.Next(0, enums.Length));
             tooth.FixTool = toolType;
             Material mat = m_toolConfig.GetMaterialForTooth(toolType);
+            GameObject diseaseObject = m_toolConfig.GetDiseaseObject(toolType);
             if (mat != null)
-                tooth.SetMaterial(mat);
+                tooth.SetMaterial(mat, diseaseObject);
         }
 
         return instance;

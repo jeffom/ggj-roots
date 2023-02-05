@@ -761,6 +761,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4626288284696513990}
     m_Modifications:
+    - target: {fileID: 1364246520287291206, guid: 79e04410c25e1416aaf777f2c6f2615a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2731585279896192780, guid: 79e04410c25e1416aaf777f2c6f2615a, type: 3}
       propertyPath: m_Name
       value: Tooth (1)
