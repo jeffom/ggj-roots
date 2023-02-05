@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameCharacterController : MonoBehaviour
@@ -84,22 +85,31 @@ public class GameCharacterController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (EquippedTool == ToolType.None)
+	    if (EquippedTool == ToolType.None)
             return;
 
-        if (collision.gameObject.CompareTag("Tooth"))
-        {
-            var tooth = collision.gameObject.GetComponent<Tooth>();
-            if (tooth)
-            {
-                if (m_equippedTool == tooth.FixTool)
-                {
-                    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
-                    tooth.PlayFixingSound(); 
-                   //   SetEquipedTool(ToolType.None);
-                    ProceduralPieceSpawner.scoreValue += 100;
-                }
-            }
-        }
+	    if (collision.gameObject.CompareTag("Tooth"))
+	    {
+		    var tooth = collision.gameObject.GetComponent<Tooth>();
+		    var currentCollisionMaterial = collision.gameObject.GetComponent<Tooth>().m_toothRenderer.material;
+		    var previousCollisionMaterial = GameObject.Find("Tooth (1)").GetComponent<Tooth>().m_toothRenderer.material;
+		    if (tooth)
+		    {
+			    if (m_equippedTool == tooth.FixTool)
+			    {
+				    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
+				    tooth.PlayFixingSound();
+				    ProceduralPieceSpawner.scoreValue += 100;
+			    }
+
+			    if (m_equippedTool == tooth.FixTool && previousCollisionMaterial == currentCollisionMaterial)
+			    {
+				    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
+				    tooth.PlayFixingSound();
+				    ProceduralPieceSpawner.scoreValue += 200;
+				    Debug.Log("The player has received twice the points.");
+			    }
+		    }
+	    }
     }
 }
