@@ -98,10 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f7443b0076744d4a0f1767c17a21f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_horizontalSpeed: 2
-  m_verticalSpeed: 2
+  m_horizontalSpeed: 5
+  m_verticalSpeed: 5
   m_toolConfig: {fileID: 11400000, guid: 91f0db683fa404597bd455fa1f761a81, type: 2}
-  m_toolRoot: {fileID: 5712019489520269966}
+  m_toolRoot: {fileID: 5231502139670455779}
 --- !u!1 &5231502139670455779
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,10 +235,5 @@ Animator:
 --- !u!4 &5697262466510206479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 489a9ca10b952a74ab2f944a53faa6ed, type: 3}
-  m_PrefabInstance: {fileID: 5231502139225592292}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5712019489520269966 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8656151528382764182, guid: 489a9ca10b952a74ab2f944a53faa6ed, type: 3}
   m_PrefabInstance: {fileID: 5231502139225592292}
   m_PrefabAsset: {fileID: 0}

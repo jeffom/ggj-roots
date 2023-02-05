@@ -888,6 +888,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2847478205753013920, guid: eef17936f07cd2240accad697a9b1364, type: 3}
+      propertyPath: m_verticalSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2847478205753013920, guid: eef17936f07cd2240accad697a9b1364, type: 3}
+      propertyPath: m_horizontalSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2847478205753013935, guid: eef17936f07cd2240accad697a9b1364, type: 3}
       propertyPath: m_Name
       value: Game Character
