@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameCharacterController : MonoBehaviour
@@ -18,6 +14,9 @@ public class GameCharacterController : MonoBehaviour
     [SerializeField] private ToolConfig m_toolConfig;
     [SerializeField] GameObject m_toolRoot;
     ToolType m_equippedTool = ToolType.None;
+
+    private Material comboMaterial = null;
+    private int comboCounter = 1;
 
     private ProceduralPieceSpawner _proceduralPieceSpawner;
 
@@ -53,12 +52,14 @@ public class GameCharacterController : MonoBehaviour
             return;
         }
 
-        Vector3 movement = new Vector3(0, direction.y * m_verticalSpeed * Time.deltaTime, direction.x * m_horizontalSpeed * Time.deltaTime);
+        Vector3 movement = new Vector3(0, direction.y * m_verticalSpeed * Time.deltaTime,
+            direction.x * m_horizontalSpeed * Time.deltaTime);
         bool isMovementAllowed = !Physics.Raycast(transform.position, direction, movement.sqrMagnitude);
         if (isMovementAllowed)
         {
             transform.Translate(movement);
         }
+
         m_animator.SetBool("Run", isMovementAllowed);
     }
 
@@ -86,30 +87,37 @@ public class GameCharacterController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (EquippedTool == ToolType.None)
-            return;
+        if (EquippedTool == ToolType.None) return;
+        if (!collision.gameObject.CompareTag("Tooth")) return;
+        var tooth = collision.gameObject.GetComponent<Tooth>();
+        if (!tooth) return;
+        if (m_equippedTool != tooth.FixTool) return;
 
-        if (collision.gameObject.CompareTag("Tooth"))
+        var currentCollisionMaterial = collision.gameObject.GetComponent<Tooth>().m_toothRenderer.material;
+        if (currentCollisionMaterial == m_toolConfig.GetMaterialForTooth(ToolType.None)) return;
+
+        UpdateCombo(currentCollisionMaterial);
+
+        int scoreForTooth = 100 * comboCounter;
+
+        ProceduralPieceSpawner.scoreValue += scoreForTooth;
+
+        tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
+        tooth.PlayFixingSound();
+    }
+
+    private void UpdateCombo(Material currentCollisionMaterial)
+    {
+        Debug.Log(currentCollisionMaterial.name);
+        Debug.Log(comboCounter);
+
+        if (comboMaterial != null && currentCollisionMaterial.name == comboMaterial.name)
         {
-            var tooth = collision.gameObject.GetComponent<Tooth>();
-            var currentCollisionMaterial = collision.gameObject.GetComponent<Tooth>().m_toothRenderer.sharedMaterial;
-            var previousCollisionMaterial = GameObject.Find("Tooth (1)").GetComponent<Tooth>().m_toothRenderer.sharedMaterial;
-            if (tooth)
-            {
-                if (m_equippedTool == tooth.FixTool)
-                {
-                    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
-                    tooth.PlayFixingSound();
-                    ProceduralPieceSpawner.scoreValue += 100;
-                }
-
-                if (m_equippedTool == tooth.FixTool && previousCollisionMaterial == currentCollisionMaterial)
-                {
-                    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
-                    tooth.PlayFixingSound();
-                    ProceduralPieceSpawner.scoreValue += 200;
-                }
-            }
+            comboCounter += 1;
+            return;
         }
+
+        comboCounter = 1;
+        comboMaterial = currentCollisionMaterial;
     }
 }
