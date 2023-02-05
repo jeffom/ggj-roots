@@ -14,7 +14,7 @@ public class ProceduralPieceSpawner : MonoBehaviour
     [SerializeField] private GameObject m_container;
     [SerializeField] private Camera m_gameCamera;
     [SerializeField] private ToolConfig m_toolConfig;
-    [SerializeField] private Transform ScoreParent;
+    [SerializeField] private Transform m_scoreParent;
     [FormerlySerializedAs("score")] [SerializeField] public TextMeshProUGUI scoreText;
 
     public int scoreValue = 0;
@@ -106,7 +106,7 @@ public class ProceduralPieceSpawner : MonoBehaviour
 
     public void ShowScoreBlimp(int combo, int scoreGained)
     {
-        GameObject tempBlimp = Instantiate(scoreText.gameObject, ScoreParent);
+        GameObject tempBlimp = Instantiate(scoreText.gameObject, m_scoreParent);
         tempBlimp.transform.position += Vector3.down * 1;
         tempBlimp.GetComponent<TextMeshProUGUI>().text = combo + "x combo: " + scoreGained;
         tempBlimp.AddComponent<BlimpScript>();
