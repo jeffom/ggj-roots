@@ -21,6 +21,7 @@ public class ProceduralPieceSpawner : MonoBehaviour
     
     //How many units for 1 second
     [SerializeField] private float m_piecesSpeed;
+    [SerializeField] private float m_piecesSpeedIncreaseFactor;
 
     private int m_initialSize = 5;
     private float m_initialPieceLength = 10.5f;
@@ -56,6 +57,8 @@ public class ProceduralPieceSpawner : MonoBehaviour
         {
             m_spawnedObjects[i].transform.Translate(new Vector3(m_piecesSpeed * Time.deltaTime, 0, 0));
         }
+
+        m_piecesSpeed -= Time.deltaTime * m_piecesSpeedIncreaseFactor/1000;
 
         CheckDespawn();
         CheckSpawn();
