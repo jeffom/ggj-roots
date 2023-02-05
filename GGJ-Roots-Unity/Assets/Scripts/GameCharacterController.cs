@@ -20,6 +20,7 @@ public class GameCharacterController : MonoBehaviour
     ToolType m_equippedTool = ToolType.None;
 
     private ProceduralPieceSpawner _proceduralPieceSpawner;
+    public string parameterName = "Anima_Param_Use_Tool";
 
     private ToolType EquippedTool
     {
@@ -34,7 +35,7 @@ public class GameCharacterController : MonoBehaviour
     void Start()
     {
         m_rigidBody = GetComponent<Rigidbody>();
-        m_animator = GetComponent<Animator>();
+        m_animator = GetComponentInChildren<Animator>();
 
         //there can only be one anyway
         m_instance = this;
@@ -82,6 +83,11 @@ public class GameCharacterController : MonoBehaviour
             m_toolConfig.PlayRandomToolSound(toolType, newToolObject);
         }
     }
+    
+    public void TriggerAnimation(string triggerName)
+    {
+	    m_animator.SetTrigger(triggerName);
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -99,6 +105,7 @@ public class GameCharacterController : MonoBehaviour
 			    {
 				    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
 				    tooth.PlayFixingSound();
+				    TriggerAnimation("Anim_Param_Use_Tool");
 				    ProceduralPieceSpawner.scoreValue += 100;
 			    }
 

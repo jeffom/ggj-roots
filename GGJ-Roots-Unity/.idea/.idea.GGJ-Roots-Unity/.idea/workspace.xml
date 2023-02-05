@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a896a14a-1f52-459d-8f9c-fc6bf799df92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ-Roots-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ-Roots-Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mouth Container.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mouth Container.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Framework/Events/Input/InputSystem/OnInputSystemEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Framework/Events/Lifecycle/FixedUpdate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cabf193938ee46108303d4f8c1351d173a00/a2/02454c9d/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e2a28edd8d1649d7ad95eb70f0212d7326e00/ee/1d1f6dd3/Animator.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,10 +63,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11723">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11723" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -93,7 +94,7 @@
       <updated>1675467477045</updated>
       <workItem from="1675467480075" duration="17695000" />
       <workItem from="1675548772328" duration="110000" />
-      <workItem from="1675550481179" duration="5728000" />
+      <workItem from="1675550481179" duration="8110000" />
     </task>
     <servers />
   </component>
@@ -132,6 +133,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs</url>
+          <line>107</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs" initialLine="109" containingFunctionPresentation="method 'OnCollisionEnter'">
+            <startOffsets>
+              <option value="3476" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3477" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs</url>
+          <line>88</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs" initialLine="88" containingFunctionPresentation="method 'TriggerAnimation'">
+            <startOffsets>
+              <option value="2775" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2810" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

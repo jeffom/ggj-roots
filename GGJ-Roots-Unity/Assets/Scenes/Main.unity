@@ -146,19 +146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_toolType: 0
---- !u!114 &137290338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137290328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34210bf3419c24a399ca7bc90939a2e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handTransform: {fileID: 589607548}
 --- !u!1001 &232294012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -509,7 +496,7 @@ Transform:
   - {fileID: 1856048912}
   - {fileID: 711552483}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1094453779
 PrefabInstance:
@@ -619,7 +606,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1369335781
 GameObject:
@@ -733,7 +720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3851483538773457101, guid: 234a458d2bc9de040834a24c42610268, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3851483538773457101, guid: 234a458d2bc9de040834a24c42610268, type: 3}
       propertyPath: m_LocalPosition.x
@@ -816,6 +803,7 @@ MonoBehaviour:
   m_verticalSpeed: 2
   m_toolConfig: {fileID: 11400000, guid: 91f0db683fa404597bd455fa1f761a81, type: 2}
   m_toolRoot: {fileID: 0}
+  parameterName: Anima_Param_Use_Tool
 --- !u!54 &1429174774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -960,7 +948,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1856048911
 GameObject:
@@ -1047,7 +1035,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -862, y: 493}
+  m_AnchoredPosition: {x: -600, y: 347}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996466211
@@ -3431,7 +3419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3389329693875938988, guid: feb08060002da4815b28838be68b8c88, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3389329693875938988, guid: feb08060002da4815b28838be68b8c88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7381,6 +7369,7 @@ MonoBehaviour:
   m_verticalSpeed: 2
   m_toolConfig: {fileID: 11400000, guid: 91f0db683fa404597bd455fa1f761a81, type: 2}
   m_toolRoot: {fileID: 660186438722361156}
+  parameterName: Anima_Param_Use_Tool
 --- !u!136 &8006908849988002105
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7617,7 +7606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8230889212044507512, guid: 10b17f572c25e496596e57e0759912ba, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8230889212044507512, guid: 10b17f572c25e496596e57e0759912ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7625,7 +7614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8230889212044507512, guid: 10b17f572c25e496596e57e0759912ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29999995
+      value: 1.19
       objectReference: {fileID: 0}
     - target: {fileID: 8230889212044507512, guid: 10b17f572c25e496596e57e0759912ba, type: 3}
       propertyPath: m_LocalPosition.z
