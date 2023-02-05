@@ -701,7 +701,7 @@ MonoBehaviour:
   m_scoreParent: {fileID: 711552483}
   scoreText: {fileID: 1996466211}
   scoreValue: 0
-  m_piecesSpeed: -0.5
+  m_piecesSpeed: -1.5
 --- !u!114 &1996466211 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6631661129148269297, guid: 8ac14b2e6e87bbc44820ce55fefedc5b, type: 3}
