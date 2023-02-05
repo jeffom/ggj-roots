@@ -75,10 +75,10 @@ public class GameCharacterController : MonoBehaviour
         if (toolPrefab != null)
         {
             var newToolObject = Instantiate<GameObject>(toolPrefab);
-            newToolObject.transform.parent = m_toolRoot.transform;
-            newToolObject.transform.localScale = Vector3.one * 0.25f;
-            newToolObject.transform.localPosition = Vector3.zero;
-            newToolObject.transform.localRotation = Quaternion.identity;
+              newToolObject.transform.parent = m_toolRoot.transform;
+              newToolObject.transform.localScale = Vector3.one * 0.25f;
+              newToolObject.transform.localPosition = Vector3.zero;
+              newToolObject.transform.localRotation = Quaternion.identity;
             m_toolConfig.PlayRandomToolSound(toolType, newToolObject);
         }
     }

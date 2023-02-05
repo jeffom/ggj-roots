@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a896a14a-1f52-459d-8f9c-fc6bf799df92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ-Roots-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ-Roots-Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mouth Container.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mouth Container.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCharacterController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +14,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SnapToHand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToothDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@2.2.4/Editor/Tiles/RuleOverrideTile/PopulateRuleOverrideTileWizard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@2.0.0/Editor/PlasticSCM/Views/PendingChanges/Dialogs/FilterRulesConfirmationDialog.cs" root0="SKIP_HIGHLIGHTING" />
@@ -90,7 +93,7 @@
       <updated>1675467477045</updated>
       <workItem from="1675467480075" duration="17695000" />
       <workItem from="1675548772328" duration="110000" />
-      <workItem from="1675550481179" duration="2834000" />
+      <workItem from="1675550481179" duration="5728000" />
     </task>
     <servers />
   </component>
