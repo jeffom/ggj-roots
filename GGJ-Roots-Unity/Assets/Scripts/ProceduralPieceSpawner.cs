@@ -106,10 +106,12 @@ public class ProceduralPieceSpawner : MonoBehaviour
     }
 
     public void ShowScoreBlimp(int combo, int scoreGained)
-    {
+    {        
         GameObject tempBlimp = Instantiate(scoreText.gameObject, m_scoreParent);
-        tempBlimp.transform.position += Vector3.down * 1;
-        tempBlimp.GetComponent<TextMeshProUGUI>().text = combo + "x combo: " + scoreGained;
+        TextMeshProUGUI label = tempBlimp.GetComponent<TextMeshProUGUI>();
+        tempBlimp.transform.parent = label.transform;
+        tempBlimp.transform.position += Vector3.down * 50;
+        label.text = combo + "x combo: " + scoreGained;
         tempBlimp.AddComponent<BlimpScript>();
     }
 }

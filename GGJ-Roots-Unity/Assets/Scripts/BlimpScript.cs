@@ -25,6 +25,6 @@ public class BlimpScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        transform.position += Vector3.up * Time.deltaTime / 2;
+        transform.position += Vector3.up * Time.deltaTime * 30f;
     }
 }
