@@ -16,6 +16,7 @@ MonoBehaviour:
   - Type: 0
     Prefab: {fileID: 7932501957898597582, guid: dd239a809dea14a81a3e7872c1f71713, type: 3}
     ToothMaterial: {fileID: 2100000, guid: eb482c64a88f2408ea3637ed07d3a23e, type: 2}
+    DiseaseObject: {fileID: 919132149155446097, guid: c2dc25e2821294fc497c9ffd90f7c45e, type: 3}
     ToolSounds:
     - {fileID: 8300000, guid: 110d96445459046c0bfa2312456e1019, type: 3}
     - {fileID: 8300000, guid: dadcc5ed60f17474db7350df1e4a59fd, type: 3}
