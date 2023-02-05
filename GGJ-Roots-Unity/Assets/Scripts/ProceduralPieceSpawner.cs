@@ -2,18 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class ProceduralPieceSpawner : MonoBehaviour
 {
+    public static ProceduralPieceSpawner Instance;
+    
     [SerializeField] private GameObject m_mouthObject;
     [SerializeField] private GameObject m_container;
     [SerializeField] private Camera m_gameCamera;
     [SerializeField] private ToolConfig m_toolConfig;
+    [SerializeField] private Transform ScoreParent;
     [FormerlySerializedAs("score")] [SerializeField] public TextMeshProUGUI scoreText;
 
-    public static int scoreValue = 0;
+    public int scoreValue = 0;
     
     //How many units for 1 second
     [SerializeField] private float m_piecesSpeed;
@@ -22,6 +26,13 @@ public class ProceduralPieceSpawner : MonoBehaviour
     private float m_initialPieceLength = 10.5f;
 
     private List<GameObject> m_spawnedObjects = new List<GameObject>();
+
+    private void Awake()
+    {
+        if (Instance != null) return;
+
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -91,5 +102,13 @@ public class ProceduralPieceSpawner : MonoBehaviour
         }
 
         return instance;
+    }
+
+    public void ShowScoreBlimp(int combo, int scoreGained)
+    {
+        GameObject tempBlimp = Instantiate(scoreText.gameObject, ScoreParent);
+        tempBlimp.transform.position += Vector3.down * 1;
+        tempBlimp.GetComponent<TextMeshProUGUI>().text = combo + "x combo: " + scoreGained;
+        tempBlimp.AddComponent<BlimpScript>();
     }
 }

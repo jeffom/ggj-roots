@@ -112,7 +112,8 @@ public class GameCharacterController : MonoBehaviour
 
         int scoreForTooth = 100 * comboCounter;
 
-        ProceduralPieceSpawner.scoreValue += scoreForTooth;
+        ProceduralPieceSpawner.Instance.scoreValue += scoreForTooth;
+        ProceduralPieceSpawner.Instance.ShowScoreBlimp(comboCounter, scoreForTooth);
 
         tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
         tooth.PlayFixingSound();
