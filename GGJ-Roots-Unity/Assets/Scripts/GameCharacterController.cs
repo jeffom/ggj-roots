@@ -100,7 +100,8 @@ public class GameCharacterController : MonoBehaviour
 
         int scoreForTooth = 100 * comboCounter;
 
-        ProceduralPieceSpawner.scoreValue += scoreForTooth;
+        ProceduralPieceSpawner.Instance.scoreValue += scoreForTooth;
+        ProceduralPieceSpawner.Instance.ShowScoreBlimp(comboCounter, scoreForTooth);
 
         tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
         tooth.PlayFixingSound();
@@ -108,9 +109,6 @@ public class GameCharacterController : MonoBehaviour
 
     private void UpdateCombo(Material currentCollisionMaterial)
     {
-        Debug.Log(currentCollisionMaterial.name);
-        Debug.Log(comboCounter);
-
         if (comboMaterial != null && currentCollisionMaterial.name == comboMaterial.name)
         {
             comboCounter += 1;
