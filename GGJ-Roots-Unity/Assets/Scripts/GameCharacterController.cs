@@ -75,41 +75,41 @@ public class GameCharacterController : MonoBehaviour
         if (toolPrefab != null)
         {
             var newToolObject = Instantiate<GameObject>(toolPrefab);
-              newToolObject.transform.parent = m_toolRoot.transform;
-              newToolObject.transform.localScale = Vector3.one * 0.25f;
-              newToolObject.transform.localPosition = Vector3.zero;
-              newToolObject.transform.localRotation = Quaternion.identity;
+            Destroy(newToolObject.GetComponent<Collider>());
+            newToolObject.transform.parent = m_toolRoot.transform;
+            newToolObject.transform.localScale = Vector3.one * 0.25f * 0.01f;
+            newToolObject.transform.localPosition = Vector3.zero;
+            newToolObject.transform.localRotation = Quaternion.identity;
             m_toolConfig.PlayRandomToolSound(toolType, newToolObject);
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-	    if (EquippedTool == ToolType.None)
+        if (EquippedTool == ToolType.None)
             return;
 
-	    if (collision.gameObject.CompareTag("Tooth"))
-	    {
-		    var tooth = collision.gameObject.GetComponent<Tooth>();
-		    var currentCollisionMaterial = collision.gameObject.GetComponent<Tooth>().m_toothRenderer.material;
-		    var previousCollisionMaterial = GameObject.Find("Tooth (1)").GetComponent<Tooth>().m_toothRenderer.material;
-		    if (tooth)
-		    {
-			    if (m_equippedTool == tooth.FixTool)
-			    {
-				    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
-				    tooth.PlayFixingSound();
-				    ProceduralPieceSpawner.scoreValue += 100;
-			    }
+        if (collision.gameObject.CompareTag("Tooth"))
+        {
+            var tooth = collision.gameObject.GetComponent<Tooth>();
+            var currentCollisionMaterial = collision.gameObject.GetComponent<Tooth>().m_toothRenderer.sharedMaterial;
+            var previousCollisionMaterial = GameObject.Find("Tooth (1)").GetComponent<Tooth>().m_toothRenderer.sharedMaterial;
+            if (tooth)
+            {
+                if (m_equippedTool == tooth.FixTool)
+                {
+                    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
+                    tooth.PlayFixingSound();
+                    ProceduralPieceSpawner.scoreValue += 100;
+                }
 
-			    if (m_equippedTool == tooth.FixTool && previousCollisionMaterial == currentCollisionMaterial)
-			    {
-				    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
-				    tooth.PlayFixingSound();
-				    ProceduralPieceSpawner.scoreValue += 200;
-				    Debug.Log("The player has received twice the points.");
-			    }
-		    }
-	    }
+                if (m_equippedTool == tooth.FixTool && previousCollisionMaterial == currentCollisionMaterial)
+                {
+                    tooth.SetMaterial(m_toolConfig.GetMaterialForTooth(ToolType.None));
+                    tooth.PlayFixingSound();
+                    ProceduralPieceSpawner.scoreValue += 200;
+                }
+            }
+        }
     }
 }
