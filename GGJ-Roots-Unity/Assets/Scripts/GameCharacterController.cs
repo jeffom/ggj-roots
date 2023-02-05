@@ -13,6 +13,9 @@ public class GameCharacterController : MonoBehaviour
     [SerializeField] private float m_verticalSpeed;
     [SerializeField] private ToolConfig m_toolConfig;
     [SerializeField] GameObject m_toolRoot;
+    [SerializeField] AudioSource m_jetpackAudioSource;
+    [SerializeField] float m_jetPackSoundTresholdHeight;
+
     ToolType m_equippedTool = ToolType.None;
 
     private Material comboMaterial = null;
@@ -34,7 +37,8 @@ public class GameCharacterController : MonoBehaviour
     void Start()
     {
         m_rigidBody = GetComponent<Rigidbody>();
-        m_animator = GetComponentInChildren<Animator>();
+        m_animator = GetComponent<Animator>();
+        m_jetpackAudioSource = GetComponent<AudioSource>();
 
         //there can only be one anyway
         m_instance = this;
@@ -61,7 +65,15 @@ public class GameCharacterController : MonoBehaviour
             transform.Translate(movement);
         }
 
-        m_animator.SetBool("Run", isMovementAllowed);
+        RaycastHit hit;
+        Physics.Raycast(transform.position, Vector3.down, out hit, Mathf.Infinity, 1 << 6 );
+        if (hit.transform != null)
+        {
+            Vector3 dist = transform.position - hit.point;           
+            float volume = dist.y / m_jetPackSoundTresholdHeight;
+            m_jetpackAudioSource.volume = Mathf.Clamp01(volume);
+        }
+               
     }
 
     public void SetEquipedTool(ToolType toolType)
@@ -99,7 +111,7 @@ public class GameCharacterController : MonoBehaviour
         if (!tooth) return;
         if (m_equippedTool != tooth.FixTool) return;
 
-        var currentCollisionMaterial = collision.gameObject.GetComponent<Tooth>().m_toothRenderer.material;
+        var currentCollisionMaterial = collision.gameObject.GetComponent<Tooth>().m_toothRenderer.sharedMaterial;
         if (currentCollisionMaterial == m_toolConfig.GetMaterialForTooth(ToolType.None)) return;
 
         UpdateCombo(currentCollisionMaterial);
@@ -115,6 +127,9 @@ public class GameCharacterController : MonoBehaviour
 
     private void UpdateCombo(Material currentCollisionMaterial)
     {
+        //Debug.Log(currentCollisionMaterial.name);
+        //Debug.Log(comboCounter);
+
         if (comboMaterial != null && currentCollisionMaterial.name == comboMaterial.name)
         {
             comboCounter += 1;
