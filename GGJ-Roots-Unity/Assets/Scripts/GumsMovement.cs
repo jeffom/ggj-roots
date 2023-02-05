@@ -6,8 +6,8 @@ public class GumsMovement : MonoBehaviour
 	[FormerlySerializedAs("object1")] public GameObject gumsUpper;
 	[FormerlySerializedAs("object2")] public GameObject gumsBottom;
 	private const float MovementSpeed = 2f;
-	private static float stoppingDistance = 10f;
-	private const float Step = 0.5f;
+	private static float stoppingDistance = 6.5f;
+	private const float Step = 0.25f;
 
 	private void Update()
 	{
@@ -19,7 +19,6 @@ public class GumsMovement : MonoBehaviour
 		if (distance > stoppingDistance)
 		{
 			gumsUpper.transform.position += direction * (MovementSpeed * Time.deltaTime);
-		//	gumsBottom.transform.position -= direction * (MovementSpeed * Time.deltaTime);
 		}
 	}
 
