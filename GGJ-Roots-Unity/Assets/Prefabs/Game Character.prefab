@@ -102,6 +102,7 @@ MonoBehaviour:
   m_verticalSpeed: 5
   m_toolConfig: {fileID: 11400000, guid: 91f0db683fa404597bd455fa1f761a81, type: 2}
   m_toolRoot: {fileID: 5231502139670455779}
+  m_jetPackSound: {fileID: 8300000, guid: 110d96445459046c0bfa2312456e1019, type: 3}
 --- !u!1 &5231502139670455779
 GameObject:
   m_ObjectHideFlags: 0
